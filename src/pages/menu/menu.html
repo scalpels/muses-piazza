@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{ 'TABS.CONFIGURATION' | translate }}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <ion-card-content text-center>
+            <h1>{{ 'CONFIGURATION.SLOGAN' | translate }}</h1>
+            <button ion-button outline (click)="goToSignup()">{{ 'COMMON.SIGNUP' | translate }}</button>
+            <button ion-button outline color="secondary" (click)="goToSignin()">{{ 'COMMON.SIGNIN' | translate }}</button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-item (click)="goToProfile()">
+            <ion-avatar item-left>
+                <img src="assets/img/marty-avatar.png">
+            </ion-avatar>
+            <h2>Marty McFly</h2>
+            <p>November 5, 1955</p>
+        </ion-item>
+    </ion-card>
+    <ion-list>
+        <ion-list-header>
+            Classes
+        </ion-list-header>
+        <ion-item>
+            <ion-icon name='md-star' item-left></ion-icon>
+            {{'CONFIGURATION.FAVORITE' | translate}}
+            <ion-note item-right>
+                To the moon
+            </ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-toggle checked="false"></ion-toggle>
+            <ion-label>
+                {{'CONFIGURATION.FOLLOWING' | translate}}
+            </ion-label>
+            <ion-icon name='md-eye' item-left></ion-icon>
+        </ion-item>
+        <ion-item>
+            <ion-icon name='md-document' item-left></ion-icon>
+            {{'CONFIGURATION.DRAFT' | translate}}
+            <ion-icon name='leaf' item-right color="secondary"></ion-icon>
+        </ion-item>
+        <ion-item>
+            <ion-icon name='flask' item-left></ion-icon>
+            Potions
+            <ion-note item-right>
+                Poisonous
+            </ion-note>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-list-header>
+            Activities
+        </ion-list-header>
+        <ion-item>
+            Incantation
+            <ion-icon name='color-wand' item-left></ion-icon>
+            <ion-note item-right>Crucio!</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-toggle checked="true"></ion-toggle>
+            <ion-label>
+                Quidditch Practice
+            </ion-label>
+            <ion-icon name='brush' item-left></ion-icon>
+        </ion-item>
+        <ion-item>
+            <ion-icon name='wine' item-left></ion-icon>
+            Mead Drinking
+            <ion-note item-right>Yes please</ion-note>
+        </ion-item>
+    </ion-list>
+</ion-content>

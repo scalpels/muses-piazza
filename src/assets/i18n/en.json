@@ -1,0 +1,34 @@
+{
+    "COMMON": {
+        "SIGNIN": "SignIn",
+        "SIGNUP": "SignUp",
+        "SIGNOUT": "SignOut",
+        "USERNAME":"Username",
+        "PASSWORD":"Password",
+        "SEARCH":"Search"
+    },
+    "HOME": {
+        "TITLE": "Home"
+    },
+    "DISCOVERY": {
+        "TITLE": "Discovery"
+    },
+    "NOTIFICATION": {
+        "TITLE": "Notifications",
+        "MESSAGE": "Message",
+        "FOLLOWING": "Following"
+    },
+    "CONFIGURATION": {
+        "TITLE": "You",
+        "FAVORITE": "Favorite",
+        "FOLLOWING": "Following",
+        "DRAFT": "Draft",
+        "SLOGAN": "SignIn,Find more features"
+    },
+    "TABS": {
+        "HOME": "Home",
+        "DISCOVERY": "Discovery",
+        "NOTIFICATION": "Notifications",
+        "CONFIGURATION": "You"
+    }
+}

@@ -1,0 +1,33 @@
+ [{
+     "title": "读书无用论，毒鸡汤！",
+     "image": "assets/img/bjork-live.jpg",
+     "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+     "speakerNames": ["Eva Eagle", "Lionel Lion"],
+     "like": 20,
+     "viewed": 120,
+     "comments": 12
+ }, {
+     "title": "强烈谴责这种可耻的行为！！！",
+     "image": "assets/img/queen-live.png",
+     "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps 我是第二天测试描述",
+     "speakerNames": ["Eva Eagle", "Lionel Lion"],
+     "like": 20,
+     "viewed": 120,
+     "comments": 12
+ }, {
+     "title": "Vue与Angular！",
+     "image": "assets/img/badu-live.png",
+     "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+     "speakerNames": ["Eva Eagle", "Lionel Lion"],
+     "like": 20,
+     "viewed": 120,
+     "comments": 12
+ }, {
+     "title": "这个演唱会，赞！！！！",
+     "image": "assets/img/nin-live.png",
+     "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile 我是第三测试描述ogies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+     "speakerNames": ["Eva Eagle", "Lionel Lion"],
+     "like": 20,
+     "viewed": 120,
+     "comments": 12
+ }]
