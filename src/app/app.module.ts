@@ -18,6 +18,8 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { ArtifactData } from '../providers/artifact-data';
+import { ActivityData } from '../providers/activity-data';
+import { FeedData } from '../providers/feed-data';
 import { ProfileData } from '../providers/profile-data';
 import { DiscoveryData } from '../providers/discovery-data';
 import { NotificationData } from '../providers/notification-data';
@@ -71,6 +73,8 @@ export function musesPiazzaTranslateLoader(http: Http) {
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     BarcodeScanner,
     ArtifactData,
+    FeedData,
+    ActivityData,
     ProfileData,
     DiscoveryData,
     NotificationData

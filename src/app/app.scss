@@ -12,10 +12,9 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-.card-md {
-    margin: 10px 0px 10px 0px;
-    width: calc(100% - 0px);
-}
+
+
+
 
 ion-card img {
     display: block;
@@ -40,4 +39,10 @@ ion-card canvas {
     border-radius: 50%;
     height: 60px;
     width: 60px;
+}
+
+.muses-activity-card {
+    margin: 0px 5px 10px 5px;
+    width: calc(100% - 10px);
+    height: 100%;
 }

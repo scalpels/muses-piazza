@@ -2,24 +2,30 @@ import { Component } from '@angular/core';
 
 import { NavController, FabContainer, LoadingController } from 'ionic-angular';
 
-import { ArtifactData } from '../../providers/artifact-data';
+import { FeedData } from '../../providers/feed-data';
+import { ActivityData } from '../../providers/activity-data';
 
 @Component({
 	selector: 'page-home',
 	templateUrl: 'home.html'
 })
 export class HomePage {
-	artifacts: any[] = [];
+	feeds: any[] = [];
+	activities:any[] = [];
 
 	constructor(
 		public navCtrl: NavController,
 		public loadingCtrl: LoadingController,
-		public artifactData: ArtifactData
+		public feedData: FeedData,
+		public activityData: ActivityData,
 	) {}
 
 	ionViewDidLoad() {
-		this.artifactData.getArtifacts().subscribe((artifacts: any[]) => {
-			this.artifacts = artifacts;
+		this.feedData.getFeeds().subscribe((feeds: any[]) => {
+			this.feeds = feeds;
+		});
+		this.activityData.getActivities().subscribe((activities: any[]) => {
+			this.activities = activities;
 		});
 	}
 	

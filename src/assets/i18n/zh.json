@@ -8,7 +8,10 @@
         "SEARCH": "搜索"
     },
     "HOME": {
-        "TITLE": "首页"
+        "TITLE": "首页",
+        "ACTIVITY": "活动",
+        "FROM_TOPIC": "来自话题",
+        "VIEW_ACTIVITY": "查看活动"
     },
     "DISCOVERY": {
         "TITLE": "发现"
