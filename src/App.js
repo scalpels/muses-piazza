@@ -6,7 +6,8 @@ class App extends Component {
  
  componentDidMount() {
     const self = this;
-   fetch('/users.json').then(function(response) {
+    const url = 'https://api.github.com/search/repositories?q=javascript&sort=stars';
+   fetch(url).then(function(response) {
       return response.json()
       }).then(function(json) {
         console.log('parsed json', json)
@@ -21,7 +22,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to Muses Piazza</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
