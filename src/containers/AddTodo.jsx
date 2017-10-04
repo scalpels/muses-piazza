@@ -1,13 +1,17 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Form,Input,Button } from 'antd';
 import { addTodo } from '../actions'
 
-let AddTodo = ({ dispatch }) => {
-  let input
+const FormItem = Form.Item;
 
+let AddTodo = ({ dispatch }) => {
+
+  let input
+  
   return (
     <div>
-      <form onSubmit={e => {
+      <Form layout="inline" onSubmit={e => {
         e.preventDefault()
         if (!input.value.trim()) {
           return
@@ -18,10 +22,12 @@ let AddTodo = ({ dispatch }) => {
         <input ref={node => {
           input = node
         }} />
-        <button type="submit">
+        <FormItem>
+        <Button type="primary"  htmlType="submit">
           Add Todo
-        </button>
-      </form>
+        </Button>
+        </FormItem>
+      </Form>
     </div>
   )
 }
