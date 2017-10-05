@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Form,Input,Button } from 'antd'
 import { addTodo } from '../actions'
 
-const FormItem = Form.Item;
+const FormItem = Form.Item
 
 class BasicForms extends Component {
 
@@ -11,7 +11,7 @@ class BasicForms extends Component {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {
             if (!err) {
-                console.log('Received values of form: ', values);
+                console.log('Received values of form: ', values)
                 this.props.dispatch(addTodo(values.password))
             }
         });
@@ -22,14 +22,14 @@ class BasicForms extends Component {
 
         const formItemLayout = {
             labelCol: {
-                xs: { span: 24 },
+                xs: { span: 16 },
                 sm: { span: 8 },
             },
             wrapperCol: {
-                xs: { span: 24 },
+                xs: { span: 16 },
                 sm: { span: 14 },
             },
-        };
+        }
 
         return (
          <Form layout="inline" onSubmit={this.handleSubmit}>
