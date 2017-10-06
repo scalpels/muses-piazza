@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import { push } from 'react-router-redux'
 import { toggleTodo } from '../actions'
 import TodoList from '../components/TodoList'
 
@@ -20,7 +21,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-  onTodoClick: toggleTodo
+  onTodoClick: toggleTodo,
+  changePage:() => push('/todo')
 }
 
 const VisibleTodoList = connect(

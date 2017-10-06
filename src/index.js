@@ -1,21 +1,22 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom'
+import { ConnectedRouter } from 'react-router-redux'
 import App from './components/App'
-import reducer from './reducers'
-
+import store, { history } from './store'
 import registerServiceWorker from './registerServiceWorker'
 
-const store = createStore(reducer)
+
+const target = document.querySelector('#root')
 
 render(
   <Provider store={store}>
-	  <BrowserRouter>
-	    <App />
-	  </BrowserRouter>
+    <ConnectedRouter history={history}>
+      <div>
+        <App />
+      </div>
+    </ConnectedRouter>
   </Provider>,
-  document.getElementById('root')
+  target
 )
 registerServiceWorker();
