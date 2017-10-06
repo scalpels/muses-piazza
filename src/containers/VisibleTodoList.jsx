@@ -1,7 +1,12 @@
 import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
+import { bindActionCreators } from 'redux'
 import { toggleTodo } from '../actions'
 import TodoList from '../components/TodoList'
+import {
+  increment,
+  incrementAsync
+} from '../reducers/counter'
 
 const getVisibleTodos = (todos, filter) => {
   switch (filter) {
@@ -16,14 +21,24 @@ const getVisibleTodos = (todos, filter) => {
   }
 }
 
+
+
+
+
 const mapStateToProps = (state) => ({
-  todos: getVisibleTodos(state.todos, state.visibilityFilter)
+  todos: getVisibleTodos(state.todos, state.visibilityFilter),
+  count: state.counter.count,
+  isIncrementing: state.counter.isIncrementing,
 })
 
-const mapDispatchToProps = {
+
+const mapDispatchToProps = dispatch => bindActionCreators({
   onTodoClick: toggleTodo,
-  changePage:() => push('/todo')
-}
+  changePage:() => push('/todo'),
+  increment:increment,
+  incrementAsync:incrementAsync
+}, dispatch)
+
 
 const VisibleTodoList = connect(
   mapStateToProps,
