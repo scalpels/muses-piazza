@@ -7,6 +7,20 @@ const FormItem = Form.Item
 
 class BasicForms extends Component {
 
+
+ componentDidMount() {
+    const url = 'https://api.github.com/search/repositories?q=javascript&sort=stars'
+   fetch(url).then(function(response) {
+      return response.json()
+      }).then(function(json) {
+        console.log('parsed json', json['total_count'])
+        console.log('parsed json', json)
+      }).catch(function(ex) {
+        console.log('parsing failed', ex)
+      })
+
+  }
+
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {
@@ -14,7 +28,7 @@ class BasicForms extends Component {
                 console.log('Received values of form: ', values)
                 this.props.dispatch(addTodo(values.password))
             }
-        });
+        })
     };
 
     render() {
