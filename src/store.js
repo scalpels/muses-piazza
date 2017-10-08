@@ -7,7 +7,7 @@ import rootReducer from './reducers'
 export const history = createHistory()
 
 const initialState = {}
-const enhancers = []
+const enhancers = [window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()]
 const middleware = [
   thunk,
   routerMiddleware(history)

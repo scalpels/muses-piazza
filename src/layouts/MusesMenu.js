@@ -1,12 +1,8 @@
 import React from 'react'
-import { Layout, Menu} from 'antd'
+import { Menu} from 'antd'
 import { Link } from 'react-router-dom'
 
-const { Header, Footer, Sider, Content } = Layout
-
-const MusesHeader = () => (
-	<Header>
-      <div className="logo" />
+const MusesMenu = () => (
       <Menu
         theme="dark"
         mode="horizontal"
@@ -17,8 +13,8 @@ const MusesHeader = () => (
         <Menu.Item key="2"><Link to='/todo'>todo</Link></Menu.Item>
         <Menu.Item key="3"><Link to='/footer'>footer</Link></Menu.Item>
         <Menu.Item key="4"><Link to='/itemList'>itemList</Link></Menu.Item>
+        <Menu.Item key="5"><Link to='/comments'>commentList</Link></Menu.Item>
       </Menu>
-    </Header>
 	)  
 
-export default MusesHeader
+export default MusesMenu
